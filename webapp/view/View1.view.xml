@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="z99.fundamentos.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:m="sap.m">
+    <m:Page id="page" title="{dados>/tituloPagina}">                    
+        <m:VBox>
+            <m:List
+                headerText="Funcionários"
+                headerLevel="H2"
+                mode="SingleSelectMaster"
+                itemPress="aoSelecionarFuncionario"
+                items="{
+                    path: 'dados>/employees'
+                }">
+                <m:StandardListItem
+                    type="Active"
+                    title="{dados>name}"
+                    info="{dados>phone}"/>
+            </m:List>
+
+            <!-- <m:Select items="{dados>/employees}">
+                <core:ListItem  key="{dados>id}" text="{dados>name}"/>
+            </m:Select> -->
+            <m:Select id="DropDownFuncionarios"/>
+        </m:VBox>
+
+        <m:footer>
+            <m:OverflowToolbar>
+                <m:Button />
+            </m:OverflowToolbar>
+        </m:footer>
+    </m:Page>
+</mvc:View>

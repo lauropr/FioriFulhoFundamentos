@@ -1,0 +1,6 @@
+<mvc:View controllerName="z99.fundamentos.controller.View2"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page2" title="{dados>name}"  showNavButton="true"/>
+</mvc:View>
