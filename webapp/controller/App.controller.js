@@ -5,8 +5,6 @@ sap.ui.define([
 
   return BaseController.extend("z99.fundamentos.controller.App", {
       onInit() {
-
-        
       }
   });
 });

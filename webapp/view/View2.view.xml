@@ -2,5 +2,5 @@
     displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="page2" title="{dados>name}"  showNavButton="true"/>
+    <Page id="page2" title="{dados>name}"  showNavButton="true" navButtonPress="aoRetornarPaginaInicial"/>
 </mvc:View>

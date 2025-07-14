@@ -42,7 +42,17 @@ sap.ui.define([
             this.getView().byId("page2").addContent(oFragmento);
 
           });
+      },
+
+      aoRetornarPaginaInicial(){
+          
+          //retorno à view1
+          //acessa o roteador
+          let oRouter = this.getOwnerComponent().getRouter();
+          oRouter.navTo("RouteView1");
+
       }
+
 
 
   });
